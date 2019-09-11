@@ -1,0 +1,17 @@
+﻿[
+
+    {
+        "id": "smallbag1",
+        "classname": "SmallBag",
+        "Name": "Простая розовая сумочка",
+        "Image": "/Images/SmallBag/SmallBag1.jpg",
+        "Description": "Простая розовая сумочка",
+        "Price": 5000.00,
+        "Durability": 100,
+        "Weight": 700,
+        "MaxWeight": 2000,
+        "BagType": 0,
+        "WearSlot": 9
+    }
+
+]

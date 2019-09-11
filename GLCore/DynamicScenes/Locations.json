@@ -1,0 +1,372 @@
+﻿[
+    {
+        "id": "setup",
+        "classname": "Room",
+        "Name": "Начало игры",
+        "Scene": "setup/gamestart",
+        "TimeZone": 1
+    },
+    {
+        "id": "disclaimer",
+        "classname": "Room",
+        "Name": "Отказ от ответственности",
+        "Scene": "setup/disclaimer",
+        "TimeZone": 1
+    },
+    {
+        "id": "gorodok",
+        "classname": "City",
+        "Name": "Городок",
+        "Scene": "gorodok/root",
+        "TimeZone": 1
+    },
+    {
+        "id": "rajondoma",
+        "classname": "District",
+        "Name": "Район моего дома",
+        "Scene": "gorodok/rajondoma",
+        "TimeZone": 1
+    },
+    {
+        /********Квартира родителей*********/
+        "id": "myroom",
+        "classname": "Room",
+        "Name": "Моя комната",
+        "Scene": "gorodok/parentflat/myroom",
+        "Description": "Комната 5x3"
+    },
+    {
+        "id": "parentroom",
+        "classname": "Room",
+        "Name": "Комната родителей",
+        "Scene": "gorodok/parentflat/parentroom"
+    },
+    {
+        "id": "bedparent",
+        "classname": "Bed",
+        "Name": "Кровать",
+        "Scene": "gorodok/parentflat/bedparent",
+        "Description": "Моя кровать"
+    },
+    {
+        "id": "koridor",
+        "classname": "Room",
+        "Name": "Коридор",
+        "Scene": "gorodok/parentflat/koridor"
+    },
+    {
+        "id": "zal",
+        "classname": "Room",
+        "Name": "Зал",
+        "Scene": "gorodok/parentflat/zal"
+    },
+    {
+        "id": "vannaja",
+        "classname": "BathRoom",
+        "Name": "Ванная",
+        "Scene": "gorodok/parentflat/vannaja"
+    },
+    {
+        "id": "kuhnja",
+        "classname": "Room",
+        "Name": "Кухня",
+        "Scene": "gorodok/parentflat/kuhnja"
+    },
+    {
+        "id": "podjezd_roditeli",
+        "classname": "Room",
+        "Name": "В подъезд",
+        "Scene": "gorodok/parentflat/podjezd_roditeli"
+    },
+    {
+        "id": "zerkalo_roditeli",
+        "classname": "RoomObject",
+        "Name": "Зеркало",
+        "Scene": "gorodok/parentflat/zerkalo",
+        "Description": "Небольшое зеркало висит на стене"
+    },
+    {
+        "id": "mojatumbochkaroditeli",
+        "classname": "Box",
+        "Name": "Моя тумбочка",
+        "Scene": "gorodok/parentflat/mojatumbochkaroditeli",
+        "Description": "Тумбочка в комнате"
+    },
+    {
+        "id": "shkafroditeli",
+        "classname": "Wardrobe",
+        "Name": "Шкаф с одеждой",
+        "Scene": "gorodok/parentflat/shkafroditeli",
+        "Description": "Шкаф в комнате"
+    },
+    {
+        "id": "bedparenttable",
+        "classname": "RoomObject",
+        "Name": "Мой стол",
+        "Scene": "gorodok/parentflat/bedparenttable",
+        "Description": "Здесь я могу заниматься"
+    },
+
+
+
+
+    {
+        /**********Салон красоты****************/
+        "id": "localsaloon",
+        "classname": "Room",
+        "Name": "Местный салон красоты",
+        "Scene": "gorodok/beautysaloon/saloonsmallcity",
+        "Description": "15 минут ходьбы"
+    },
+
+
+
+    {
+        /**********Дом культуры****************/
+        "id": "sportklubdvor",
+        "classname": "District",
+        "Name": "Двор дома культуры",
+        "Scene": "gorodok/sportklub/sportklubdvor",
+        "Description": "Двор дома культуры"
+    },{
+        "id": "gorodokdisco",
+        "classname": "District",
+        "Name": "Местная дискотека",
+        "Scene": "gorodok/sportklub/gorodokdisco",
+        "Description": "Местная дискотека"
+    },
+
+
+
+    {
+        /**********Школа****************/
+        "id": "shkolnijdvor",
+        "classname": "District",
+        "Name": "Школьный двор",
+        "Scene": "gorodok/school/shkolnijdvor",
+        "Description": "Школьный двор"
+    },
+    {
+        "id": "shkolamain",
+        "classname": "ObjectBuilding",
+        "Name": "Школа",
+        "Scene": "gorodok/school/shkolamain",
+        "Description": "Главный коридор"
+    },
+    {
+        "id": "shkolamath",
+        "classname": "Room",
+        "Name": "Кабинет математики",
+        "Scene": "gorodok/school/shkolamath"
+    },
+    {
+        "id": "shkolaruss",
+        "classname": "Room",
+        "Name": "Кабинет русского языка",
+        "Scene": "gorodok/school/shkolaruss"
+    },
+    {
+        "id": "shkolazal",
+        "classname": "Room",
+        "Name": "Спорт зал",
+        "Scene": "gorodok/school/shkolazal"
+    },
+    {
+        "id": "shkolazalpodsobka",
+        "classname": "Room",
+        "Name": "Подсобка в спорт зале",
+        "Scene": "gorodok/school/shkolazalpodsobka"
+    },
+    {
+        "id": "shkolahistory",
+        "classname": "Room",
+        "Name": "Кабинет истории",
+        "Scene": "gorodok/school/shkolahistory"
+    },
+    {
+        "id": "shkolacomputer",
+        "classname": "Room",
+        "Name": "Кабинет информатики",
+        "Scene": "gorodok/school/shkolacomputer"
+    },
+    {
+        "id": "shkolaphysic",
+        "classname": "Room",
+        "Name": "Кабинет физики",
+        "Scene": "gorodok/school/shkolaphysic"
+    },
+    {
+        "id": "shkolachemistry",
+        "classname": "Room",
+        "Name": "Кабинет химии",
+        "Scene": "gorodok/school/shkolachemistry"
+    },
+    {
+        "id": "shkolabiology",
+        "classname": "Room",
+        "Name": "Кабинет биологии",
+        "Scene": "gorodok/school/shkolabiology"
+    },
+    {
+        "id": "shkolageography",
+        "classname": "Room",
+        "Name": "Кабинет географии",
+        "Scene": "gorodok/school/shkolageography"
+    },
+    {
+        "id": "shkolarasspisanije",
+        "classname": "RoomObject",
+        "Name": "Рассписание уроков",
+        "Scene": "gorodok/school/rasspisanije"
+    },
+    {
+        "id": "shkolasport",
+        "classname": "Room",
+        "Name": "Спортивный корпус",
+        "Scene": "gorodok/school/shkolasport"
+    },
+    {
+        "id": "stolovka",
+        "classname": "Room",
+        "Name": "Столовая",
+        "Scene": "gorodok/school/stolovka"
+    },
+    {
+        "id": "shkolarazdevalkafemale",
+        "classname": "Room",
+        "Name": "Женская раздевалка",
+        "Scene": "gorodok/school/shkolarazdevalkafemale"
+    },	
+    {
+        "id": "razdevalkaskaf",
+        "classname": "Wardrobe",
+        "Name": "Мой шкафчик",
+        "Scene": "gorodok/school/razdevalkaskaf"
+    },
+    {
+        "id": "kabinetzaucha",
+        "classname": "Room",
+        "Name": "Кабинет зауча",
+        "Scene": "gorodok/school/kabinetzaucha"
+    },
+    {
+        "id": "shkoladushfemale",
+        "classname": "BathRoom",
+        "Name": "Женский душ",
+        "Scene": "gorodok/school/shkoladushfemale"
+    },
+	
+	
+
+
+
+
+
+
+
+
+    {
+        /**********Центр городка****************/
+        "id": "centrgorodka",
+        "classname": "District",
+        "Name": "Центр городка",
+        "Scene": "gorodok/centrgorodka"
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+        /**********Вокзал****************/
+        "id": "vokzalploshadj",
+        "classname": "District",
+        "Name": "Привокзальная площадь",
+        "Scene": "gorodok/vokzal/vokzalploshadj"
+    },
+    {
+        "id": "rinokgorodok",
+        "classname": "District",
+        "Name": "Местный рынок",
+        "Scene": "gorodok/vokzal/rinokgorodok"
+    },
+    {
+        "id": "rinokkniznijlarek",
+        "classname": "ObjectBuilding",
+        "Name": "Книжный ларек",
+        "Scene": "gorodok/vokzal/rinokkniznijlarek"
+    },
+    {
+        "id": "rinokmakazinodezdi",
+        "classname": "ObjectBuilding",
+        "Name": "Магазин одежды",
+        "Scene": "gorodok/vokzal/rinokmakazinodezdi"
+    },
+    {
+        "id": "rinokpoleznijemelochi",
+        "classname": "ObjectBuilding",
+        "Name": "Магазин полезные мелочи",
+        "Scene": "gorodok/vokzal/rinokpoleznijemelochi"
+    },
+    {
+        "id": "rinokkomissionka",
+        "classname": "ObjectBuilding",
+        "Name": "Комиссионка",
+        "Scene": "gorodok/vokzal/rinokkomissionka"
+    },
+    {
+        "id": "kafevokzal",
+        "classname": "ObjectBuilding",
+        "Name": "Кафе",
+        "Scene": "gorodok/vokzal/kafevokzal"
+    },
+    {
+        "id": "oteljvokzal",
+        "classname": "ObjectBuilding",
+        "Name": "Отель",
+        "Scene": "gorodok/vokzal/oteljvokzal"
+    },
+    {
+        "id": "vokzalgorodok",
+        "classname": "ObjectBuilding",
+        "Name": "Вокзал",
+        "Scene": "gorodok/vokzal/vokzalgorodok"
+    },
+    {
+        "id": "vokzalkassi",
+        "classname": "Room",
+        "Name": "Кассы",
+        "Scene": "gorodok/vokzal/vokzalkassi"
+    },
+    {
+        "id": "vokzaltualet",
+        "classname": "Room",
+        "Name": "Туалет",
+        "Scene": "gorodok/vokzal/vokzaltualet"
+    },
+    {
+        "id": "vokzalnachalstvo",
+        "classname": "Room",
+        "Name": "Кабинет начальства",
+        "Scene": "gorodok/vokzal/vokzalnachalstvo"
+    },
+    {
+        "id": "magazinalkogolja",
+        "classname": "Shop",
+        "Name": "Магазин алкаголя",
+        "Scene": "gorodok/vokzal/magazinalkogolja"
+    },
+    {
+        "id": "larjokmelochej",
+        "classname": "Shop",
+        "Name": "Ларек полезных мелочей",
+        "Scene": "gorodok/vokzal/larjokmelochej"
+    }
+
+]

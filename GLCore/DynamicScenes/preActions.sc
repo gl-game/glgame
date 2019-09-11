@@ -1,0 +1,1 @@
+﻿game.BlockAll = 0;

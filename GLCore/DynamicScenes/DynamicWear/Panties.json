@@ -1,0 +1,68 @@
+﻿[
+    {
+        "id": "panties1",
+        "classname": "Panties",
+        "Name": "Розовые трусики с вырезом",
+        "Image": "/Images/Panties/Panties1.jpg",
+        "Description": "Розовые трусики с вырезом",
+        "Price": 28000.00,
+        "BagType": 0,
+        "WearSlot": 8,
+        "Heat": 0,
+        "Beauty": 17,
+        "Durability": 100,
+        "DressType": 5
+    },
+    {
+        "id": "panties2",
+        "classname": "Panties",
+        "Name": "Красные трусики К2",
+        "Image": "/Images/Panties/Panties2.jpg",
+        "Description": "Красные трусики К2",
+		"Price": 1200.00,
+		"BagType": 0,
+		"WearSlot" : 8,
+		"Heat" : 1,
+		"Beauty": 3,
+        "Durability": 100
+    },
+    {
+        "id": "panties3",
+        "classname": "Panties",
+        "Name": "Черные трусики К3",
+        "Image": "/Images/Panties/Panties3.jpg",
+        "Description": "Черные трусики К3",
+		"Price": 600.00,
+		"BagType": 0,
+		"WearSlot" : 8,
+		"Heat" : 3,
+		"Beauty": 1,
+        "Durability": 100
+    },
+    {
+        "id": "panties4",
+        "classname": "Panties",
+        "Name": "Белые трусики К4",
+        "Image": "/Images/Panties/Panties4.jpg",
+        "Description": "Белые трусики К4",
+		"Price": 1800.00,
+		"BagType": 0,
+		"WearSlot" : 8,
+		"Heat" : 2,
+		"Beauty": 4,
+        "Durability": 100
+    },
+    {
+        "id": "Panties5",
+        "classname": "Panties",
+        "Name": "Розовый трусики К5",
+        "Image": "/Images/Panties/panties5.jpg",
+        "Description": "Розовый трусики К5",
+		"Price": 2600.00,
+		"BagType": 0,
+		"WearSlot" : 8,
+		"Heat" : 1,
+		"Beauty": 6,
+        "Durability": 100
+    }    
+]

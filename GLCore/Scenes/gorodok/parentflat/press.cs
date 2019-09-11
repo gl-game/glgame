@@ -1,0 +1,27 @@
+﻿using GLCore.Dynaimc;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+
+namespace GLCore.Scenes.gorodok.parentflat
+{
+    public class press : BaseScene
+    {
+        public override void GetView()
+        {
+            var otojti = new
+            {
+                Name = "Закончить",
+                Scene = "gorodok/parentflat/myroom"
+            };
+            AddDynamicAction(otojti);
+
+            AddDescription(@"
+<center><img src='/images/imgpreview/press.jpg'></center>
+Вы делали упражнения на пресс в течении пятнадцати минут развивая выносливость.
+");
+        }
+    }
+}

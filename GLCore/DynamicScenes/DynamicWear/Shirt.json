@@ -1,0 +1,101 @@
+﻿[
+
+    {
+        "id": "schoolshirt1",
+        "classname": "Shirt",
+        "Name": "Школьная блузка Б1",
+        "Image": "/Images/Shirt/SchoolShirt1.jpg",
+        "Description": "Школьная блузка Б1",
+        "Price": 5800.00,
+        "BagType": 0,
+        "WearSlot": 2,
+        "Heat": 2,
+        "Beauty": 3,
+        "Durability": 100,
+        "DressType": 1
+    },
+    {
+        "id": "schoolshirt2",
+        "classname": "Shirt",
+        "Name": "Школьная блузка Б2",
+        "Image": "/Images/Shirt/SchoolShirt2.jpg",
+        "Description": "Школьная блузка Б2",
+		"Price": 4000.00,
+		"BagType": 0,
+		"WearSlot" : 2,
+		"Heat" : 2,
+		"Beauty": 1,
+        "Durability": 100,
+        "DressType": 1
+    },
+    {
+        "id": "schoolshirt3",
+        "classname": "Shirt",
+        "Name": "Школьная блузка Б3",
+        "Image": "/Images/Shirt/SchoolShirt3.jpg",
+        "Description": "Школьная блузка Б3",
+		"Price": 1800.00,
+		"BagType": 0,
+		"WearSlot" : 2,
+		"Heat" : 1,
+		"Beauty": 1,
+        "Durability": 100,
+        "DressType": 1
+    },
+    {
+        "id": "schoolshirt4",
+        "classname": "Shirt",
+        "Name": "Школьная блузка Б4",
+        "Image": "/Images/Shirt/SchoolShirt4.jpg",
+        "Description": "Школьная блузка Б4",
+		"Price": 1950.00,
+		"BagType": 0,
+		"WearSlot" : 2,
+		"Heat" : 2,
+		"Beauty": 1,
+        "Durability": 100,
+        "DressType": 1
+    },
+    {
+        "id": "shirt1",
+        "classname": "Shirt",
+        "Name": "Бежевая блузка БЛ1",
+        "Image": "/Images/Shirt/Shirt1.jpg",
+        "Description": "Бежевая блузка БЛ1",
+		"Price": 1000.00,
+		"BagType": 0,
+		"WearSlot" : 2,
+		"Heat" : 1,
+		"Beauty": 1,
+        "Durability": 100
+    },
+    {
+        "id": "shirt2",
+        "classname": "Shirt",
+        "Name": "Серая кофта КО2",
+        "Image": "/Images/Shirt/Shirt2.jpg",
+        "Description": "Серая кофта КО2",
+		"Price": 800.00,
+		"BagType": 0,
+		"WearSlot" : 2,
+		"Heat" : 11,
+		"Beauty": 1,
+        "Durability": 100
+    },
+    {
+        "id": "sportshirt1",
+        "classname": "Shirt",
+        "Name": "Спортивная кофта",
+        "Image": "/Images/Shirt/SportShirt1.jpg",
+        "Description": "Спортивная кофта",
+		"Price": 1200.00,
+		"BagType": 0,
+		"WearSlot" : 2,
+		"Heat" : 12,
+		"Beauty": 1,
+        "Durability": 100,
+        "DressType": 4
+    }
+
+
+]

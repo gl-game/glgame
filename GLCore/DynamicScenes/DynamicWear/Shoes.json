@@ -1,0 +1,43 @@
+﻿[
+    {
+        "id": "schoolshoes1",
+        "classname": "Shoes",
+        "Name": "Школьные туфли",
+        "Image": "/Images/Shoes/SchoolShoes1.jpg",
+        "Description": "Школьные туфли Ш1",
+        "Price": 1200.00,
+        "BagType": 0,
+        "WearSlot": 4,
+        "Heat": 2,
+        "Beauty": 0,
+        "Durability": 100,
+        "DressType": 1
+    },
+    {
+        "id": "shoes1",
+        "classname": "Shoes",
+        "Name": "Розовые туфли",
+        "Image": "/Images/Shoes/Shoes1.jpg",
+        "Description": "Розовые туфли",
+		"Price": 800.00,
+		"BagType": 0,
+		"WearSlot" : 4,
+		"Heat" : 2,
+		"Beauty": 0,
+        "Durability": 100
+    },
+    {
+        "id": "sportshoes1",
+        "classname": "Shoes",
+        "Name": "Кроссовки",
+        "Image": "/Images/Shoes/SportShoes1.jpg",
+        "Description": "Кроссовки",
+		"Price": 800.00,
+		"BagType": 0,
+		"WearSlot" : 4,
+		"Heat" : 2,
+		"Beauty": 1,
+        "Durability": 100,
+        "DressType": 4
+    }   
+]

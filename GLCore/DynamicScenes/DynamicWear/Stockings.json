@@ -1,0 +1,28 @@
+﻿[
+    {
+        "id": "stockings1",
+        "classname": "Stockings",
+        "Name": "Белые чулки Ч1",
+        "Image": "/Images/Stockings/Stockings1.jpg",
+        "Description": "Белые чулки Ч1",
+        "Price": 4000.00,
+        "BagType": 0,
+        "WearSlot": 5,
+        "Heat": 2,
+        "Beauty": 5,
+        "Durability": 100
+    },
+    {
+        "id": "stockings2",
+        "classname": "Stockings",
+        "Name": "Теплые колготки Ч2",
+        "Image": "/Images/Stockings/Stockings2.jpg",
+        "Description": "Белые чулки Ч2",
+        "Price": 500.00,
+        "BagType": 0,
+        "WearSlot": 5,
+        "Heat": 6,
+        "Beauty": -1,
+        "Durability": 100
+    }
+]

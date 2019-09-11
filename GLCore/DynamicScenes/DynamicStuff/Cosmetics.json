@@ -1,0 +1,26 @@
+﻿[
+    {
+        "id": "pomada1",
+        "classname": "Pomade",
+        "Name": "Розовая губная помада наташка",
+        "Description": "Розовая губная помада наташка",
+        "Image": "/Images/Cometics/Pomade1.jpg",
+        "Price": 300.00,
+        "Weight": 50,
+        "BagType": 0,
+        "UseCount":  20,
+        "Type":  0
+    },
+	{
+        "id": "teni1",
+        "classname": "EyeShadow",
+        "Name": "Тени для глаз наташка",
+        "Description": "Тени для глаз наташка",
+        "Image": "/Images/Cometics/EyeShadow1.jpg",
+        "Price": 300.00,
+        "Weight": 50,
+        "BagType": 0,
+        "UseCount":  20,
+        "Type":  0
+    }
+]

@@ -1,0 +1,14 @@
+﻿[
+    {
+        "id": "tualetnajavoda1",
+        "classname": "Parfume",
+        "Name": "Туалетная вода наташка",
+        "Description": "Туалетная вода",
+        "Image": "/Images/Parfume/Parfume1.jpg",
+        "Price": 300.00,
+        "Weight": 50,
+        "BagType": 0,
+        "UseCount":  20,
+        "Type":  0
+    }
+]

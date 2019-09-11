@@ -1,0 +1,43 @@
+﻿[
+    {
+        "id": "schooldress1",
+        "classname": "Dress",
+        "Name": "Школьное платье Ш1",
+        "Image": "/Images/Dress/SchoolDress1.jpg",
+        "Description": "Школьное платье Ш1",
+		"Price": 18000.00,
+		"BagType": 0,
+		"WearSlot" : 2,
+		"Heat" : 8,
+		"Beauty": 3,
+        "Durability": 100,
+		"DressType": 1
+    },
+    {
+        "id": "schooldress2",
+        "classname": "Dress",
+        "Name": "Школьное платье Ш2",
+        "Image": "/Images/Dress/SchoolDress2.jpg",
+        "Description": "Школьное платье Ш2",
+		"Price": 16000.00,
+		"BagType": 0,
+		"WearSlot" : 2,
+		"Heat" : 7,
+		"Beauty": 3,
+        "Durability": 100,
+		"DressType": 1
+    },
+    {
+        "id": "dress1",
+        "classname": "Dress",
+        "Name": "Бордовое платье П1",
+        "Image": "/Images/Dress/Dress1.jpg",
+        "Description": "Бордовое платье П1",
+		"Price": 14000.00,
+		"BagType": 0,
+		"WearSlot" : 2,
+		"Heat" : 11,
+		"Beauty": 5,
+        "Durability": 100
+    }, 
+]

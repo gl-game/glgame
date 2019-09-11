@@ -1,0 +1,15 @@
+﻿[
+    {
+        "id": "zimnajakurtka",
+        "classname": "Coat",
+        "Name": "Зимняя куртка",
+        "Image": "/Images/Coat/Coat1.jpg",
+        "Description": "Зимняя куртка",
+		"Price": 10000.00,
+		"BagType": 0,
+		"WearSlot" : 6,
+		"Heat" : 15,
+		"Beauty": 0,
+        "Durability": 100
+    }    
+]

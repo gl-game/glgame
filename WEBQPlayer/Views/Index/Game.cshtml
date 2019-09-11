@@ -1,0 +1,117 @@
+﻿@model WEBQPlayer.Models.SceneViewModel
+@{
+    ViewBag.Title = "WEBQPlayer";
+}
+
+<div class="row border-top body hight-column" style="min-height: 580px">
+    <div class="col-sm-2 col-md-2 col-lg-2 hight-column left-side">
+        <b>@Model.DateTime</b><br />
+        @Model.player.Money рублей в кошельке<br />
+        Летние каникулы.<br />
+        @Html.Raw(Model.player.GetHealth().Name)
+        @Html.Raw(Model.player.GetWillPower().Name)
+        @Html.Raw(Model.player.GetMana().Name)
+        <span class="green-bar">@Html.Raw(Model.player.Indicator(Model.player.Health, Model.player.maxHealth))</span> @Model.player.Health  здоровье<br />
+        <span class="green-bar">@Html.Raw(Model.player.Indicator(Model.player.Mind, Model.player.maxMind))</span> @Model.player.Mind  чистота разума<br />
+        <span class="green-bar">@Html.Raw(Model.player.Indicator(Model.player.Mana, Model.player.maxMana))</span> @Model.player.Mana  настроение<br />
+        <span class="green-bar">@Html.Raw(Model.player.Indicator(Model.player.Energy, Model.player.maxEnergy)) </span> @Model.player.Energy  сытость<br />
+        <span class="green-bar">@Html.Raw(Model.player.Indicator(Model.player.Drink, Model.player.maxDrink))</span> @Model.player.Drink  жажда<br />
+        <span class="green-bar">@Html.Raw(Model.player.Indicator(Model.player.Sleep, Model.player.maxSleep))</span> @Model.player.Sleep  бодрость<br />
+        @Model.player.GetFantasy()<br />
+        @if (Model.weather != null)
+        {
+            <span>@Model.weather.GetWeather()</span>
+        }
+
+    </div>
+
+    <div class="col-sm-6 col-md-6 col-lg-7 hight-column border-left padding-top-main left-side">
+        @Html.Raw(Model.Description)
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-2 hight-column border-left left-side">
+        <div class="title-header">Направления</div>
+        <ul class="nav nav-sidebar">
+            @foreach (var m in Model.Directions)
+            {
+                if (m.Scene == "#")
+                {
+                    <li><a href="@m.Scene">@m.Name<div class="small-text">@m.Description</div></a></li>
+                }
+                else
+                {
+                    if (@m.id != null)
+                    {
+                        <li><a href="/callback/@m.id">@m.Name<div class="small-text">@m.Description</div></a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/scene/@m.Scene">@m.Name<div class="small-text">@m.Description</div></a></li>
+                    }
+                }
+            }
+        </ul>
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-1 hight-column border-left left-side">
+        <div class="title-header">Главное меню</div>
+        <ul class="nav nav-sidebar">
+            <li><a href="#">Персонаж</a></li>
+            <li><a href="#">Навыки</a></li>
+            <li><a href="#">Статистика</a></li>
+        </ul>
+        <ul class="nav nav-sidebar">
+            <li><a href="#">Лицо</a></li>
+            <li><a href="#">Тело</a></li>
+            <li><a href="#">Одежда</a></li>
+            <li><a href="#">Татуировки</a></li>
+            <li><a href="#">Пирсинг</a></li>
+        </ul>
+    </div>
+</div>
+<div class="row border-top body">
+    <div class="col-sm-6 left-side">
+        <div class="title-header">Действия</div>
+        <ul class="nav nav-sidebar">
+            @foreach (var m in Model.Actions)
+            {
+                if (m.Scene == "#")
+                {
+                    <li><a href="@m.Scene">@m.Name<div class="small-text">@m.Description</div></a></li>
+                }
+                else
+                {
+                    if (@m.id != null)
+                    {
+                        <li><a href="/callback/@m.id">@m.Name<div class="small-text">@m.Description</div></a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/scene/@m.Scene">@m.Name<div class="small-text">@m.Description</div></a></li>
+                    }
+                }
+            }
+        </ul>
+    </div>
+    <div class="col-sm-6  left-side border-left" style="min-height: 180px">
+        <div class="title-header">Персонажи</div>
+        <ul class="nav nav-sidebar">
+            @foreach (var m in Model.Actors)
+            {
+                if (m.Scene == "#")
+                {
+                    <li><a href="@m.Scene">@m.Name<div class="small-text">@m.Description</div></a></li>
+                }
+                else
+                {
+                    if (@m.id != null)
+                    {
+                        <li><a href="/callback/@m.id">@m.Name<div class="small-text">@m.Description</div></a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/scene/@m.Scene">@m.Name<div class="small-text">@m.Description</div></a></li>
+                    }
+                }
+            }
+        </ul>
+    </div>
+</div>

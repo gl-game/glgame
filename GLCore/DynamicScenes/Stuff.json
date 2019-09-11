@@ -1,0 +1,58 @@
+﻿[
+    {
+        "id": "zontik",
+        "classname": "GameStuff",
+        "Name": "Зонтик",
+        "Description": "Зонтик помогает защититься от дождя",
+		"Price": 600.00,
+		"Nobag": true
+    },
+	{
+        "id": "rascheska1",
+        "classname": "HairBrush",
+        "Name": "Расческа",
+        "Description": "Расческа",
+		"Price": 1000.00,
+		"Weight": 250,
+		"BagType": 0
+    },
+	{
+        "id": "handmirror1",
+        "classname": "HandMirror",
+        "Name": "Ручное зеркало",
+        "Description": "Маленькое ручное зеркало",
+		"Price": 1000.00,
+		"Weight": 250,
+		"BagType": 0
+    },
+	{
+        "id": "shampunj1",
+        "classname": "WashSoap",
+        "Name": "Шампунь Наташа",
+        "Description": "Шампунь Наташа",
+		"Price": 250.00,
+		"Weight": 250,
+		"BagType": 0,
+        "UseCount":  20,
+    },
+	{
+        "id": "britva1",
+        "classname": "Shaver",
+        "Name": "Бритва",
+        "Description": "Бритва",
+		"Price": 500.00,
+		"Weight": 30,
+		"BagType": 0,
+        "UseCount":  20
+    },
+	{
+        "id": "condom",
+        "classname": "Condom",
+        "Name": "Презевативы",
+        "Description": "Презевативы",
+		"Price": 500.00,
+		"Weight": 30,
+		"BagType": 0,
+        "UseCount":  20,
+    }
+]

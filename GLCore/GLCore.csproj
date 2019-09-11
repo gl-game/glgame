@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F75ADBAA-E7F6-4664-9F57-D1F0AF884AB3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GLCore</RootNamespace>
+    <AssemblyName>GLCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\GLAction.cs" />
+    <Compile Include="Actions\IAction.cs" />
+    <Compile Include="Actors\Actor.cs" />
+    <Compile Include="Actors\FamilyMale.cs" />
+    <Compile Include="Actors\Male.cs" />
+    <Compile Include="Actors\IMale.cs" />
+    <Compile Include="Actors\IActor.cs" />
+    <Compile Include="Actors\FamilyFemale.cs" />
+    <Compile Include="Actors\Female.cs" />
+    <Compile Include="Actors\IFemale.cs" />
+    <Compile Include="Actors\Player.cs" />
+    <Compile Include="Data\DataActors.cs" />
+    <Compile Include="Data\DataHelper.cs" />
+    <Compile Include="Data\DataSkill.cs" />
+    <Compile Include="Data\DataLesson.cs" />
+    <Compile Include="Data\DataStuff.cs" />
+    <Compile Include="DTO\NotificationDTO.cs" />
+    <Compile Include="DTO\SceneDTO.cs" />
+    <None Include="DynamicScenes\DynamicStuff\Cosmetics.json" />
+    <None Include="DynamicScenes\DynamicStuff\Parfume.json" />
+    <Compile Include="Extensions\Enum.cs" />
+    <Compile Include="Extensions\Helpers.cs" />
+    <Compile Include="Extensions\Skills.cs" />
+    <Compile Include="Extensions\Lessons.cs" />
+    <Compile Include="Extensions\TimerObject.cs" />
+    <Compile Include="GLSceneIntimPF.cs" />
+    <Compile Include="GLSceneTalk.cs" />
+    <Compile Include="GLSceneIntimPM.cs" />
+    <Compile Include="GLTempData.cs" />
+    <Compile Include="Locations\BathRoom.cs" />
+    <Compile Include="Locations\Bed.cs" />
+    <Compile Include="Objects\Condom.cs" />
+    <Compile Include="Objects\EyeShadow.cs" />
+    <Compile Include="Objects\HandMirror.cs" />
+    <Compile Include="Objects\HairBrush.cs" />
+    <Compile Include="Objects\Parfume.cs" />
+    <Compile Include="Objects\Pomade.cs" />
+    <Compile Include="Objects\Shaver.cs" />
+    <Compile Include="Objects\WashSoap.cs" />
+    <Compile Include="Scenes\SetupGame.cs" />
+    <Compile Include="Scenes\BaseScene.cs" />
+    <Compile Include="Scenes\gorodok\sportklub\sportklubdvor.cs" />
+    <Compile Include="WorkAndStudy\ILesson.cs" />
+    <Compile Include="WorkAndStudy\Lesson.cs" />
+    <None Include="DynamicScenes\DynamicStuff\Alcohol.json" />
+    <None Include="DynamicScenes\DynamicWear\Bag.json" />
+    <None Include="DynamicScenes\DynamicWear\Bra.json" />
+    <None Include="DynamicScenes\DynamicWear\Panties.json" />
+    <None Include="DynamicScenes\DynamicWear\Coat.json" />
+    <None Include="DynamicScenes\DynamicWear\SmallBag.json" />
+    <None Include="DynamicScenes\DynamicWear\Stockings.json" />
+    <None Include="DynamicScenes\DynamicWear\Skirt.json" />
+    <None Include="DynamicScenes\DynamicWear\Shoes.json" />
+    <None Include="DynamicScenes\DynamicWear\Shirt.json" />
+    <None Include="DynamicScenes\DynamicWear\Pants.json" />
+    <None Include="DynamicScenes\DynamicWear\Hat.json" />
+    <None Include="DynamicScenes\DynamicWear\Dress.json" />
+    <None Include="DynamicScenes\Lessons.json" />
+    <None Include="DynamicScenes\Skills.json" />
+    <None Include="DynamicScenes\startActions.sc" />
+    <None Include="DynamicScenes\Stuff.json" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="GLGameCompiler.cs" />
+    <Compile Include="GLScene.cs" />
+    <Compile Include="GLSceneInternal.cs" />
+    <Compile Include="Locations\Box.cs" />
+    <Compile Include="Locations\ICity.cs" />
+    <Compile Include="Locations\Shop.cs" />
+    <Compile Include="Locations\Wardrobe.cs" />
+    <Compile Include="Objects\Alcohol.cs" />
+    <Compile Include="Objects\Bag.cs" />
+    <Compile Include="Objects\Bra.cs" />
+    <Compile Include="Objects\Coat.cs" />
+    <Compile Include="Objects\Conspiration.cs" />
+    <Compile Include="Objects\Dress.cs" />
+    <Compile Include="Objects\Hat.cs" />
+    <Compile Include="Objects\IBottomDress.cs" />
+    <Compile Include="Objects\ITopDress.cs" />
+    <Compile Include="Objects\IWear.cs" />
+    <Compile Include="Objects\Panties.cs" />
+    <Compile Include="Objects\Pants.cs" />
+    <Compile Include="Objects\Shirt.cs" />
+    <Compile Include="Objects\Shoes.cs" />
+    <Compile Include="Objects\Skirt.cs" />
+    <Compile Include="Objects\Stockings.cs" />
+    <Compile Include="Objects\Wear.cs" />
+    <Compile Include="Objects\Medicine.cs" />
+    <Compile Include="Objects\Food.cs" />
+    <Compile Include="Objects\GameStuff.cs" />
+    <Compile Include="Objects\IBagObject.cs" />
+    <Compile Include="Objects\IStuff.cs" />
+    <Compile Include="Objects\SmallBag.cs" />
+    <Compile Include="GameSkills\ISkill.cs" />
+    <Compile Include="GameSkills\Skill.cs" />
+    <Compile Include="StaticTypes.cs" />
+    <Compile Include="Statistics.cs" />
+    <Compile Include="SupportObjects\IWeather.cs" />
+    <Compile Include="SupportObjects\Weather.cs" />
+    <Compile Include="TestMyRoom.cs" />
+    <None Include="DynamicScenes\Locations.json" />
+    <None Include="DynamicScenes\postActions.sc" />
+    <None Include="DynamicScenes\preActions.sc" />
+    <Compile Include="GLData.cs" />
+    <Compile Include="SupportObjects\GameTime.cs" />
+    <Compile Include="Data\DataPlayer.cs" />
+    <None Include="DynamicScenes\Actors.json" />
+    <Compile Include="GLGame.cs">
+      <ExcludeFromStyleCop>True</ExcludeFromStyleCop>
+    </Compile>
+    <Compile Include="Data\DataLocations.cs" />
+    <Compile Include="Locations\City.cs" />
+    <Compile Include="Locations\RoomObject.cs" />
+    <Compile Include="Locations\Country.cs" />
+    <Compile Include="Locations\District.cs" />
+    <Compile Include="Locations\ILocation.cs" />
+    <Compile Include="Locations\ObjectBuilding.cs" />
+    <Compile Include="Locations\Room.cs" />
+    <Compile Include="Locations\Street.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Images\dialog\Thumbs.db" />
+    <None Include="Images\me\handsstyle\Thumbs.db" />
+    <None Include="Images\me\hymen\Thumbs.db" />
+    <None Include="Images\me\legsstyle\Thumbs.db" />
+    <None Include="Images\me\lesbian\Thumbs.db" />
+    <None Include="Images\me\pussystyle\Thumbs.db" />
+    <None Include="Images\me\Thumbs.db" />
+    <None Include="Images\school\biology\Thumbs.db" />
+    <None Include="Images\school\history\Thumbs.db" />
+    <None Include="Images\school\matematika\Thumbs.db" />
+    <None Include="Images\school\matematika_fakultativ\Thumbs.db" />
+    <None Include="Images\school\Thumbs.db" />
+    <None Include="Images\teacher\istorija\Thumbs.db" />
+    <None Include="Images\teacher\physics\Thumbs.db" />
+    <None Include="packages.config" />
+    <Compile Include="Scenes\gorodok\beautysaloon\hair.cs" />
+    <Compile Include="Scenes\gorodok\beautysaloon\manukur.cs" />
+    <Compile Include="Scenes\gorodok\beautysaloon\pedikur.cs" />
+    <Compile Include="Scenes\gorodok\beautysaloon\saloonsmallcity.cs" />
+    <Compile Include="Scenes\gorodok\beautysaloon\vaxbikini.cs" />
+    <Compile Include="Scenes\gorodok\beautysaloon\vaxbikinifull.cs" />
+    <Compile Include="Scenes\gorodok\beautysaloon\vaxhand.cs" />
+    <Compile Include="Scenes\gorodok\beautysaloon\vaxleg.cs" />
+    <Compile Include="Scenes\gorodok\centrgorodka.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\bedparent.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\bedparenttable.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\koridor.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\kuhnja.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\mojatumbochkaroditeli.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\myroom.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\otzimanija.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\podjezd_roditeli.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\press.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\readbook.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\shkafroditeli.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\sister\sleeproom.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\sister\supermarket.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\sister\talkroom.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\sister\talkroomwalking.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\vannaja.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\wakeup.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\zal.cs" />
+    <Compile Include="Scenes\gorodok\parentflat\zerkalo.cs" />
+    <Compile Include="Scenes\gorodok\rajondoma.cs" />
+    <Compile Include="Scenes\gorodok\root.cs" />
+    <Compile Include="Scenes\gorodok\school\kabinetzaucha.cs" />
+    <Compile Include="Scenes\gorodok\school\rasspisanije.cs" />
+    <Compile Include="Scenes\gorodok\school\razdevalkaskaf.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolabiology.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolachemistry.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolacomputer.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolacomputertest.cs" />
+    <Compile Include="Scenes\gorodok\school\shkoladushfemale.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolageography.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolahistory.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolamain.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolamaindynamic.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolamath.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolamathfakultativ.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolaphysic.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolarazdevalkafemale.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolaruss.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolasport.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolazal.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolazalpodsobka.cs" />
+    <Compile Include="Scenes\gorodok\school\shkolnijdvor.cs" />
+    <Compile Include="Scenes\gorodok\school\stolovka.cs" />
+    <Compile Include="Scenes\gorodok\sportklub\gorodokdisco.cs" />
+    <Compile Include="Scenes\gorodok\vokzal\kafevokzal.cs" />
+    <Compile Include="Scenes\gorodok\vokzal\larjokmelochej.cs" />
+    <Compile Include="Scenes\gorodok\vokzal\magazinalkogolja.cs" />
+    <Compile Include="Scenes\gorodok\vokzal\oteljvokzal.cs" />
+    <Compile Include="Scenes\gorodok\vokzal\rinokgorodok.cs" />
+    <Compile Include="Scenes\gorodok\vokzal\vokzalgorodok.cs" />
+    <Compile Include="Scenes\gorodok\vokzal\vokzalploshadj.cs" />
+    <Compile Include="Scenes\defaultevents\dead.cs" />
+    <Compile Include="Scenes\setup\disclaimer.cs" />
+    <Compile Include="Scenes\setup\gamestart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scenes\gorodok\fabrika\" />
+    <Folder Include="Scenes\gorodok\ozero\" />
+    <Folder Include="Scenes\gorodok\poliklinika\" />
+    <Folder Include="Scenes\gorodok\skver\" />
+    <Folder Include="Scenes\gorodok\supermarket\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallBag.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Bag\Bag1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bag\BrandBag1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bag\BrandBag2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bag\BrandBag3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bag\BrandBag4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bag\BrandBag5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bag\BrandBag6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bag\Paket1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bag\Paket2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bag\SchoolBag1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bag\SimleBag1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bra\Bra3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bra\Bra4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bra\Bra5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bra\Bra6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bra\Bra7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bra\Bra8.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bra\Bra9.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bra\SportBra1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Bra\SportBra2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Coat\Coat1.jpg" />
+    <Content Include="Images\common\cat1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\common\cat1_happy.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\common\cat1_unhappy.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\common\endofflesson1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\common\learn_lessons.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\common\my_room_table.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\dialog\kasia_1.jpg" />
+    <Content Include="Images\Dress\Dress1.jpg" />
+    <Content Include="Images\Dress\SchoolDress1.jpg" />
+    <Content Include="Images\Dress\SchoolDress2.jpg" />
+    <Content Include="Images\Hat\Bant1.jpg" />
+    <Content Include="Images\Hat\Bant2.jpg" />
+    <Content Include="Images\Hat\Bant3.jpg" />
+    <Content Include="Images\Hat\Hat1.jpg" />
+    <Content Include="Images\Hat\Hat2.jpg" />
+    <Content Include="Images\Hat\Hat3.jpg" />
+    <Content Include="Images\Hat\Hat4.jpg" />
+    <Content Include="Images\Hat\Hat5.jpg" />
+    <Content Include="Images\Hat\Hat6.jpg" />
+    <Content Include="Images\imgpreview\bedrPar2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\imgpreview\book.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\imgpreview\hcol.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\imgpreview\korrPar.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\imgpreview\kuhrPar.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\imgpreview\podezd.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\imgpreview\press.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\imgpreview\push.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\imgpreview\sitrPar.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\imgpreview\vanna.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\klub\dk.jpg" />
+    <Content Include="Images\me\askquestion.jpg" />
+    <Content Include="Images\me\drunk1.jpg" />
+    <Content Include="Images\me\dush.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\me\handsstyle\Hands0.jpg" />
+    <Content Include="Images\me\handsstyle\Hands1.jpg" />
+    <Content Include="Images\me\handsstyle\Hands2.jpg" />
+    <Content Include="Images\me\handsstyle\Hands3.jpg" />
+    <Content Include="Images\me\handsstyle\Hands4.jpg" />
+    <Content Include="Images\me\hymen\1.jpg" />
+    <Content Include="Images\me\hymen\2.jpg" />
+    <Content Include="Images\me\hymen\3.jpg" />
+    <Content Include="Images\me\hymen\4.jpg" />
+    <Content Include="Images\me\legsstyle\Legs0.jpg" />
+    <Content Include="Images\me\legsstyle\Legs1.jpg" />
+    <Content Include="Images\me\legsstyle\Legs2.jpg" />
+    <Content Include="Images\me\legsstyle\Legs3.jpg" />
+    <Content Include="Images\me\legsstyle\Legs4.jpg" />
+    <Content Include="Images\me\lesbian\sit_top.jpg" />
+    <Content Include="Images\me\lesbian\strapon_bed.jpg" />
+    <Content Include="Images\me\lesbian\strapon_bed_pussy.jpg" />
+    <Content Include="Images\me\lesbian\strapon_kitchen.jpg" />
+    <Content Include="Images\me\lesbian\strapon_pussy.jpg" />
+    <Content Include="Images\me\lesbian\strapon_suck.jpg" />
+    <Content Include="Images\me\lesbian\wear_big_strapon.jpg" />
+    <Content Include="Images\me\lesbian\wear_strapon.jpg" />
+    <Content Include="Images\me\lesbian\wea_strapon.jpg" />
+    <Content Include="Images\me\lesbian\wea_strapon3.jpg" />
+    <Content Include="Images\me\podmignutj.jpg" />
+    <Content Include="Images\me\pussystyle\Pussy0.jpg" />
+    <Content Include="Images\me\pussystyle\Pussy1.jpg" />
+    <Content Include="Images\me\pussystyle\Pussy2.jpg" />
+    <Content Include="Images\me\pussystyle\Pussy3.jpg" />
+    <Content Include="Images\me\pussystyle\Pussy4.jpg" />
+    <Content Include="Images\me\pussystyle\Pussy5.jpg" />
+    <Content Include="Images\me\pussystyle\Pussy6.jpg" />
+    <Content Include="Images\Panties\Panties1.jpg" />
+    <Content Include="Images\Panties\Panties2.jpg" />
+    <Content Include="Images\Panties\Panties3.jpg" />
+    <Content Include="Images\Panties\Panties4.jpg" />
+    <Content Include="Images\Panties\Panties5.jpg" />
+    <Content Include="Images\Pants\HotPants1.jpg" />
+    <Content Include="Images\Pants\Jeans1.jpg" />
+    <Content Include="Images\Pants\Jeans2.jpg" />
+    <Content Include="Images\Pants\Jeans3.jpg" />
+    <Content Include="Images\Pants\Jeans4.jpg" />
+    <Content Include="Images\Pants\Jeans5.jpg" />
+    <Content Include="Images\Pants\Jeans6.jpg" />
+    <Content Include="Images\Pants\SchoolPants1.jpg" />
+    <Content Include="Images\Pants\SchoolPants2.jpg" />
+    <Content Include="Images\Pants\SportPants1.jpg" />
+    <Content Include="Images\Parfume\Parfume1.jpg" />
+    <Content Include="Images\pics\bed.jpg" />
+    <Content Include="Images\pics\son.jpg" />
+    <Content Include="Images\pic\gorodok.jpg" />
+    <Content Include="Images\pic\podjezd.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\pic\u_okna.jpg" />
+    <Content Include="Images\pic\vokzal.jpg" />
+    <Content Include="Images\qwest\alter\gdksport.jpg" />
+    <Content Include="Images\qwest\alter\gkafe.jpg" />
+    <Content Include="Images\qwest\alter\gkafe2.jpg" />
+    <Content Include="Images\qwest\alter\gschool2.jpg" />
+    <Content Include="Images\qwest\alter\parikmaherskoy1.jpg" />
+    <Content Include="Images\qwest\alter\sister.jpg" />
+    <Content Include="Images\school\biology\kabinet.jpg" />
+    <Content Include="Images\school\biology\teacher1.jpg" />
+    <Content Include="Images\school\biology\teacher2.jpg" />
+    <Content Include="Images\school\biology\teacher3.jpg" />
+    <Content Include="Images\school\break_1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\school\break_photo_1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\school\break_photo_2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\school\break_photo_3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\school\history\kabinet.jpg" />
+    <Content Include="Images\school\history\teacher1.jpg" />
+    <Content Include="Images\school\history\teacher2.jpg" />
+    <Content Include="Images\school\history\teacher3.jpg" />
+    <Content Include="Images\school\matematika\kabinet.jpg" />
+    <Content Include="Images\school\matematika\teacher1.jpg" />
+    <Content Include="Images\school\matematika\teacher2.jpg" />
+    <Content Include="Images\school\matematika\teacher3.jpg" />
+    <Content Include="Images\school\matematika\teacher4.jpg" />
+    <Content Include="Images\school\matematika\teacher5.jpg" />
+    <Content Include="Images\school\matematika\teacher6.jpg" />
+    <Content Include="Images\school\matematika\teacher7.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\me_on_top.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher2.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher3.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher_angry.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher_angry2.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher_domina.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher_pussy1.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher_pussy2.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher_pussy3.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher_pussy4.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher_straponmouth.jpg" />
+    <Content Include="Images\school\matematika_fakultativ\teacher_straponmouth2.jpg" />
+    <Content Include="Images\school\para.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\school\peremena.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\school\sportkorpus.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\school\sportzal.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\school\stolovka.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\school\ups.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\school\yard.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\school\zenskrazdevalka.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Shirt\SchoolShirt1.jpg" />
+    <Content Include="Images\Shirt\SchoolShirt2.jpg" />
+    <Content Include="Images\Shirt\SchoolShirt3.jpg" />
+    <Content Include="Images\Shirt\SchoolShirt4.jpg" />
+    <Content Include="Images\Shirt\Shirt1.jpg" />
+    <Content Include="Images\Shirt\Shirt2.jpg" />
+    <Content Include="Images\Shirt\SportShirt1.jpg" />
+    <Content Include="Images\Shoes\SchoolShoes1.jpg" />
+    <Content Include="Images\Shoes\Shoes1.jpg" />
+    <Content Include="Images\Shoes\SportShoes1.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt1.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt10.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt11.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt12.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt2.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt3.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt4.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt5.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt6.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt7.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt8.jpg" />
+    <Content Include="Images\Skirt\MiniSkirt9.jpg" />
+    <Content Include="Images\Skirt\SchoolSkirt1.jpg" />
+    <Content Include="Images\Skirt\Skirt1.jpg" />
+    <Content Include="Images\Skirt\Skirt2.jpg" />
+    <Content Include="Images\Skirt\Skirt3.jpg" />
+    <Content Include="Images\Skirt\Skirt4.jpg" />
+    <Content Include="Images\Skirt\Skirt5.jpg" />
+    <Content Include="Images\Skirt\Skirt6.jpg" />
+    <Content Include="Images\Skirt\Skirt7.jpg" />
+    <Content Include="Images\Skirt\Skirt8.jpg" />
+    <Content Include="Images\SmallBag\SmallBag1.jpg" />
+    <Content Include="Images\Stockings\Stockings1.jpg" />
+    <Content Include="Images\Stockings\Stockings2.jpg" />
+    <Content Include="Images\teacher\istorija\teacher1.jpg" />
+    <Content Include="Images\teacher\istorija\teacher2.jpg" />
+    <Content Include="Images\teacher\physics\kabinetfiziki.jpg" />
+    <Content Include="Images\teacher\physics\teacher1.jpg" />
+    <Content Include="Images\teacher\physics\teacher2.jpg" />
+    <Content Include="Images\teacher\physics\teacher3.jpg" />
+    <Content Include="Resources\Bag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\DeleteRed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Dressup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Siluet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ToBox.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(ProjectDir)DynamicScenes\*" "$(ProjectDir)../WEBQPlayer/bin/DynamicScenes" /e /y /i /r
+xcopy "$(ProjectDir)DynamicScenes\*" "$(ProjectDir)../WEBQGame/bin/Debug/DynamicScenes" /e /y /i /r
+xcopy "$(ProjectDir)DynamicScenes\*" "$(ProjectDir)../WEBQGame/bin/Release/DynamicScenes" /e /y /i /r
+xcopy "$(ProjectDir)Images\*" "$(ProjectDir)../WEBQGame/bin/Debug/Images" /e /y /i /r</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,56 @@
+﻿[
+    {
+        "id": "matematika",
+        "classname": "Math",
+        "Name": "Математика",
+        "Description": "Математика"
+    },
+    {
+        "id": "fizika",
+        "classname": "Physics",
+        "Name": "Физика",
+        "Description": "Физика"
+    },
+    {
+        "id": "himija",
+        "classname": "Chemistry",
+        "Name": "Химия",
+        "Description": "Химия"
+    },
+    {
+        "id": "geografija",
+        "classname": "Geography",
+        "Name": "География",
+        "Description": "География"
+    },
+    {
+        "id": "informatika",
+        "classname": "Computers",
+        "Name": "Информатика",
+        "Description": "Информатика"
+    },
+    {
+        "id": "fizkultura",
+        "classname": "Sport",
+        "Name": "Физкультура",
+        "Description": "Физкультура"
+    },
+    {
+        "id": "biologija",
+        "classname": "Biology",
+        "Name": "Биология",
+        "Description": "Биология"
+    },
+    {
+        "id": "istorija",
+        "classname": "History",
+        "Name": "История",
+        "Description": "История"
+    },
+    {
+        "id": "russkijjazik",
+        "classname": "Russinan",
+        "Name": "Русский язык",
+        "Description": "Русский язык"
+    }
+]

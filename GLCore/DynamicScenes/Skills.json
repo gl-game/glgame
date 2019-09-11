@@ -1,0 +1,119 @@
+﻿[
+    {
+        "id": "mathskill",
+        "classname": "Calculation",
+        "Name": "Навык работы с цифрами",
+        "Description": "Работа с цифрами"
+    }, 
+    {
+        "id": "physicskill",
+        "classname": "Physics",
+        "Name": "Навык физики",
+        "Description": "Починка и т.д."
+    },
+    {
+        "id": "chemistryskill",
+        "classname": "Chemistry",
+        "Name": "Навык химии",
+        "Description": "Коктели и т.д."
+    },
+    {
+        "id": "computerskill",
+        "classname": "Speaking",
+        "Name": "Навык работы с компьютером",
+        "Description": "Работа с компьютером"
+    },
+    {
+        "id": "speakingskill",
+        "classname": "Speaking",
+        "Name": "Навык общения (общий)",
+        "Description": "Навык общения"
+    },
+    {
+        "id": "speakingskillfemale",
+        "classname": "SpeakingFemale",
+        "Name": "Навык общения c женщинами",
+        "Description": "Навык общения с женщинами"
+    },
+    {
+        "id": "speakingskillmale",
+        "classname": "SpeakingMale",
+        "Name": "Навык общения с мужчинами",
+        "Description": "Навык общения с мужчинами"
+    },
+    {
+        "id": "historyskill",
+        "classname": "History",
+        "Name": "Знание истории",
+        "Description": "Знание истории"
+    },
+    {
+        "id": "geographyskill",
+        "classname": "Geography",
+        "Name": "Знание географии",
+        "Description": "Знание географии"
+    },
+    {
+        "id": "anatomy",
+        "classname": "Anatomy",
+        "Name": "Знания анатомии",
+        "Description": "Знания анатомии"
+    },
+    {
+        "id": "dance",
+        "classname": "Dance",
+        "Name": "Умение танцевать",
+        "Description": "Умение танцевать"
+    },
+    {
+        "id": "seductionskill",
+        "classname": "Seduction",
+        "Name": "Навык соблазнения",
+        "Description": "Навык соблазнения"
+    },
+    {
+        /* Sex skills */
+        "id": "suckskill",
+        "classname": "SuckDick",
+        "Name": "Навык орального секса",
+        "Description": "Работа ртом"
+    },
+    {
+        "id": "vaginalskill",
+        "classname": "VaginalFuck",
+        "Name": "Навык вагинального секса",
+        "Description": "Работа писей"
+    },
+    {
+        "id": "analskill",
+        "classname": "AnalFuck",
+        "Name": "Навык анального секса",
+        "Description": "Работа попой"
+    },
+    {
+        "id": "handskill",
+        "classname": "HandSkill",
+        "Name": "Навык handjob",
+        "Description": "Работа руками"
+    },
+    {
+        "id": "kuniskill",
+        "classname": "KuniSkill",
+        "Name": "Навык куннилингуса",
+        "Description": "Куннилингуса"
+    },
+    {
+        "id": "didloskill",
+        "classname": "DildoSkill",
+        "Name": "Умение обращатся с секс игрушками",
+        "Description": "Умение обращатся с игрушками"
+    },
+    {
+        "id": "straponskill",
+        "classname": "StraponSkill",
+        "Name": "Умение обращатся со страпоном",
+        "Description": "Умение обращатся со страпоном"
+    }
+    
+
+]
